@@ -1,0 +1,16 @@
+digraph G {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+"Primero"
+"Segundo"
+"Tercero"
+"Cuarto"
+"Quinto"
+"Sexto"
+;label="'Grafo 8'";}"Primero" -> "Segundo";"Segundo" -> "Tercero";"Tercero" -> "Cuarto";"Cuarto" -> "Quinto";"Quinto" -> "Sexto";}

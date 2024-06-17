@@ -1,0 +1,14 @@
+digraph G {
+	fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif"]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+
+	subgraph cluster_0 {
+		style=filled;
+		color=lightgrey;
+		node [style=filled,color=white];
+"Inicio"
+"Cálculo"
+"Resultado"
+"Fin"
+;label="'Grafo 3'";}"Inicio" -> "Cálculo";"Cálculo" -> "Resultado";"Resultado" -> "Fin";}

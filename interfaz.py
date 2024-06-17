@@ -1,6 +1,11 @@
 import tkinter as tk
+from tkinter import ttk, filedialog
 from tkinter import Frame, ttk
 from PIL import Image, ImageTk
+
+
+
+rut = ''
 
 def cargar_imagen(ruta):
     print(ruta)
@@ -10,6 +15,13 @@ def cargar_imagen(ruta):
     label_imagen = tk.Label(frame, image=imagen_tk)
     label_imagen.image = imagen_tk
     label_imagen.pack()
+
+def cargar_archivo():
+    global rut
+    rut = filedialog.askopenfilename(title='abrir')
+
+def analizar():
+    print(rut)
     
 
 def seleccionar_opcion(event):
@@ -47,10 +59,10 @@ label_seleccion.pack(pady=10)
 
 #botones
 #boton para cargar archivo
-boton1 = tk.Button(frame_botones, text='Cargar archivo')
+boton1 = tk.Button(frame_botones, text='Cargar archivo', command=cargar_archivo)
 boton1.pack(side=tk.LEFT, padx=10)
 #boton para ejecutar archivo
-boton2 = tk.Button(frame_botones, text='Ejecutar archivo')
+boton2 = tk.Button(frame_botones, text='Ejecutar archivo', command=analizar)
 boton2.pack(side=tk.LEFT, padx=10)
 #boton para reporte de tokens
 boton3 = tk.Button(frame_botones, text='Reporte de Tokens')
